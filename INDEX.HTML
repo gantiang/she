@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <embed src="https://t1.kugou.com/song.html?id=6qTRvc0B8V2 ">   </embed>
+  <style>
+  body{color:#7b00ff
+     }
+   p::after{
+   content:"🐇";
+     } 
+    </style>
+  <p id="p"></p>
+  <script>
+   let str = " 舍舍好久不见！ "
+   let i = 0
+   let timer = setInterval(()=>{
+     p.innerText += str[i]
+     i++
+     if(i == str.length-1){
+     clearInterval(timer)
+     }
+    },400)
+   </script>
+  <style>
+  html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #161616;
+}
+  <style type="text/css">
+		*{margin: 0;padding: 0;}
+		.wrap{width: 100px;height: 100px;margin: -50px auto;position:absolute;left:20%}
+		.box{width: 200px;height: 200px;margin: 200px auto;position: relative;transition: all 3s;transform-style: preserve-3d;animation: move 3s infinite linear alternate;}
+		.box>div{width: 200px;height: 200px;font-size: 60px;opacity: .9;position: absolute;top: 0;left: 0;transition: all 1s;}
+
+		.box img{width: 200px;height: 200px;}
+
+		.left{transform: rotateY(90deg) translateZ(-100px);}
+		.right{transform: rotateY(90deg) translateZ(100px);}
+		.top{transform: rotateX(90deg) translateZ(100px);}
+		.bottom{transform: rotateX(90deg) translateZ(-100px);}
+		.after{transform: translateZ(-100px);}
+		.before{transform: translateZ(100px);}
+
+		.wrap .box:hover .left{transform: rotateY(90deg) translateZ(-160px);}
+		.wrap .box:hover .right{transform: rotateY(90deg) translateZ(160px);}
+		.wrap .box:hover .top{transform: rotateX(90deg) translateZ(160px);}
+		.wrap .box:hover .bottom{transform: rotateX(90deg) translateZ(-160px);}
+		.wrap .box:hover .after{transform: translateZ(-160px);}
+		.wrap .box:hover .before{transform: translateZ(160px);}
+
+		@keyframes move{
+			from{transform: rotateX(20deg) rotateY(0deg);}
+			to{transform: rotateX(13deg) rotateY(720deg);}
+		}
+	</style>
+</head>
+	<div class="wrap">
+		<div class="box">
+			<div class="left"><img src="舍舍/1.jpg"alt=""></div>         
+			<div class="right"><img src="舍舍/2.jpg" alt=""></div>     
+			<div class="top"><img src="舍舍/3.jpg" alt=""></div>       
+			<div class="bottom"><img src="舍舍/5.jpg" alt=""></div>    
+			<div class="after"><img src="舍舍/4.jpg" alt=""></div>     
+			<div class="before"><img src="舍舍/6.jpg" alt=""></div>    
+		</div>
+	</div>
+
+</body>
+</html>
